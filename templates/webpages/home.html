@@ -1,0 +1,374 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- Hero Start -->
+<div class="hero">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-sm-12 col-md-6">
+                <div class="hero-text">
+                    <h1>Adopt a pet or get one from a store near you. </h1>
+                    <p>
+                        Find your next best friend from our extensive list of sellers near you and help them find a new
+                        home.
+                    </p>
+                    <div class="hero-btn">
+                        <a class="btn" href="{% url 'contact_us' %}">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 d-none d-md-block">
+                <div class="hero-image">
+                    <img src="{% static 'img/pets.png' %}" alt="Hero Image">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Hero End -->
+
+
+<!-- About Start -->
+<div class="about wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-5 col-md-6">
+                <div class="about-img">
+                    <img src="{% static 'img/dogs1.png' %}" alt="Image">
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-6">
+                <div class="section-header text-center">
+                    <p>Learn About Us</p>
+                    <h2>Welcome to Petops</h2>
+                </div>
+                <div class="about-text">
+                    <p>
+                        We offer quick & easy Marketplace for cats dogs and other pets </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur
+                        facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum,
+                        viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.
+                    </p>
+                    <a class="btn" href="">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+
+
+<!-- Service Start -->
+<div class="service">
+    <div class="container">
+        <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+            <p>What we do</p>
+            <h2>Petops to find your perfect Buddy </h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.0s">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fa fa-paw" aria-hidden="true"></i>
+                    </div>
+                    <h3>PETS FOR ADOPTION</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="service-item active">
+                    <div class="service-icon">
+                        <i class="fa fa-paw" aria-hidden="true"></i>
+                    </div>
+                    <h3>PETS SPA</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fa fa-paw" aria-hidden="true"></i>
+                    </div>
+                    <h3>PETS FOR SALE</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Service End -->
+
+
+<!-- Class Start -->
+<div class="class">
+    <div class="container">
+        <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+            <p>Our Offers</p>
+            <h2>Chose a service</h2>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <ul id="class-filter">
+                    <li data-filter="*" class="filter-active">All services</li>
+                    <li data-filter=".filter-1">Adopt a pet</li>
+                    <li data-filter=".filter-2">Purchase a pet</li>
+                    <li data-filter=".filter-3">Pet services</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- Class End -->
+
+
+<!-- Discount Start -->
+<div class="discount wow zoomIn" data-wow-delay="0.1s">
+    <div class="container">
+        <div class="section-header text-center">
+            <p>PET SUPPLIES DISCOUNT</p>
+            <h2>Get <span>30%</span> Discount for all Pet Supplies</h2>
+        </div>
+        <div class="container discount-text">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis
+                ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
+                Curabitur non nisl nec nisi scelerisque maximus.
+            </p>
+            <a class="btn">Join Now</a>
+        </div>
+    </div>
+</div>
+<!-- Discount End -->
+
+
+<!-- Price Start -->
+<div class="price">
+    <div class="container">
+        <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+            <p>Subscription Package</p>
+            <h2>Subscription Plans</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-4 wow fadeInUp" data-wow-delay="0.0s">
+                <div class="price-item">
+                    <div class="price-header">
+                        <div class="price-title">
+                            <h2>Basic</h2>
+                        </div>
+                        <div class="price-prices">
+                            <h2><small>₹</small>1499<span>/ mo</span></h2>
+                        </div>
+                    </div>
+                    <div class="price-body">
+                        <div class="price-description">
+                            <ul>
+                                <li>Pet food delivered</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="price-footer">
+                        <div class="price-action">
+                            <a class="btn" href="">Join Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="price-item featured-item">
+                    <div class="price-header">
+                        <div class="price-status">
+                            <span>Popular</span>
+                        </div>
+                        <div class="price-title">
+                            <h2>Standard</h2>
+                        </div>
+                        <div class="price-prices">
+                            <h2><small>₹</small>1999<span>/ mo</span></h2>
+                        </div>
+                    </div>
+                    <div class="price-body">
+                        <div class="price-description">
+                            <ul>
+                                <li>Pet food</li>
+                                <li>Personal Trainer</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="price-footer">
+                        <div class="price-action">
+                            <a class="btn" href="">Join Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="price-item">
+                    <div class="price-header">
+                        <div class="price-title">
+                            <h2>Premium</h2>
+                        </div>
+                        <div class="price-prices">
+                            <h2><small>₹</small>2499<span>/ mo</span></h2>
+                        </div>
+                    </div>
+                    <div class="price-body">
+                        <div class="price-description">
+                            <ul>
+                                <li>Pet food</li>
+                                <li>Personal Trainer</li>
+                                <li>Pet Spa</li>
+                                <li>Pet grooming kit</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="price-footer">
+                        <div class="price-action">
+                            <a class="btn" href="">Join Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Price End -->
+
+
+<!-- Testimonial Start -->
+<div class="testimonial wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container">
+        <div class="section-header text-center">
+            <p>Testimonial</p>
+            <h2>Our Client Say!</h2>
+        </div>
+        <div class="owl-carousel testimonials-carousel">
+            <div class="testimonial-item">
+                <!-- <div class="testimonial-img">
+                            <img src="img/testimonial-1.jpg" alt="Image">
+                        </div> -->
+                <div class="testimonial-text">
+                    <p>
+                        Lorem ipsum dolor sit amet consec adipis elit. Etiam accums lacus eget velit tincid, quis suscip
+                        justo dictum.
+                    </p>
+                    <h3>Customer Name</h3>
+                    <h4>Profession</h4>
+                </div>
+            </div>
+            <div class="testimonial-item">
+                <div class="testimonial-text">
+                    <p>
+                        Lorem ipsum dolor sit amet consec adipis elit. Etiam accums lacus eget velit tincid, quis suscip
+                        justo dictum.
+                    </p>
+                    <h3>Customer Name</h3>
+                    <h4>Profession</h4>
+                </div>
+            </div>
+            <div class="testimonial-item">
+                <div class="testimonial-text">
+                    <p>
+                        Lorem ipsum dolor sit amet consec adipis elit. Etiam accums lacus eget velit tincid, quis suscip
+                        justo dictum.
+                    </p>
+                    <h3>Customer Name</h3>
+                    <h4>Profession</h4>
+                </div>
+            </div>
+            <div class="testimonial-item">
+                <div class="testimonial-text">
+                    <p>
+                        Lorem ipsum dolor sit amet consec adipis elit. Etiam accums lacus eget velit tincid, quis suscip
+                        justo dictum.
+                    </p>
+                    <h3>Customer Name</h3>
+                    <h4>Profession</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Testimonial End -->
+
+
+<!-- Team Start -->
+<div class="team">
+    <div class="container">
+        <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+            <p>Our Team</p>
+            <h2>Team Members</h2>
+        </div>
+        <!-- justify-content-between -->
+        <div class="row team-row">
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.0s">
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="{% static 'img/team-1.jpg' %}" alt="Image">
+                        <div class="team-social">
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-text">
+                        <h2>Person 1</h2>
+                        <p>Director</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="{% static 'img/team-2.jpg' %}" alt="Image">
+                        <div class="team-social">
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-text">
+                        <h2>Person 2</h2>
+                        <p>CTO</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="{% static 'img/team-3.jpg' %}" alt="Image">
+                        <div class="team-social">
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-text">
+                        <h2>Person 3</h2>
+                        <p>COO</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Team End -->
+
+
+
+
+
+
+{% endblock %}
