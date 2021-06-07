@@ -191,7 +191,16 @@ a:focus {
     text-transform: lowercase;
     transition: .5s;
 }
-
+.navbar .nav-item {
+    color:#ffffff !important;
+    font-weight: bold;
+}
+.navbar .nav-item {
+    background-color:transparent !important;
+}
+.navbar .nav-item:hover  {
+    color: #ff0095 !important;
+}
 .navbar.nav-sticky .navbar-brand span {
     color: #ff0095;
 }
